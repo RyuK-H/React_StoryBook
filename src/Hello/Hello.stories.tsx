@@ -19,7 +19,7 @@ export const hello = () => {
   const big = boolean("big", false);
   const name = text("name", "Storybook");
 
-  return <Hello name={name} big={big} onHello={action("test-action")("one")} onBye={action("onBye")("one")} />;
+  return <Hello name={name} big={big} onHello={action("test-action")} onBye={action("onBye")} />;
 };
 hello.story = {
   name: "Default"
